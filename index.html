@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Password Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🔐 Password Tool</h1>
+
+  <div class="generator">
+    <input type="number" id="length" placeholder="Password length (8-20)">
+    <button onclick="generatePassword()">Generate</button>
+    <input type="text" id="result" readonly placeholder="Your password">
+  </div>
+
+  <div class="checker">
+    <h3>Check Strength</h3>
+    <input type="text" id="checkInput" placeholder="Enter password to check">
+    <button onclick="checkStrength()">Check</button>
+    <p id="strengthResult"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
